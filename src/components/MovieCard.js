@@ -14,8 +14,7 @@ const MovieCard = (movie) => {
       <p className="MovieCardItem">{movie.name}</p>
       {movie.schedule?.days?.length > 0 && (
         <p className="MovieCardItem">
-          Schedule:
-          {` ${movie.schedule?.days?.join(", ")} ${getScheduleTime(
+          {`Schedule: ${movie.schedule?.days?.join(", ")} ${getScheduleTime(
             movie.schedule?.time,
             movie.language
           )}`}
