@@ -15,7 +15,6 @@ function App() {
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/details/:movieId" component={MovieDetails} />
-        <Redirect from="/details" to="/" />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>

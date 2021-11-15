@@ -13,11 +13,11 @@ function Main() {
   const dispayedData = useMemo(
     () =>
       Object.entries(data).length > 0
-        ? data?.filter((movie) => movie.rating.average >= rating * 2)
+        ? data?.filter((movie) => movie.rating?.average >= rating * 2)
         : data,
     [data, rating]
   );
-  console.log("Rendering...");
+
   return (
     <div className="App">
       <div className="App-header">
